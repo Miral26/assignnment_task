@@ -15,13 +15,13 @@ interface Props {
 const DropDown = (props: Props) => {
   const { selectedResources, handleChange, resources } = props;
   return (
-    <FormControl size='small' className={styles.dropdown_container}>
-      <InputLabel id='demo-select-small-label'>Resources</InputLabel>
+    <FormControl size="small" style={{ margin: "20px 0", minWidth: "120px" }}>
+      <InputLabel id="demo-select-small-label">Resources</InputLabel>
       <Select
-        labelId='demo-select-small-label'
-        id='demo-select-small'
+        labelId="demo-select-small-label"
+        id="demo-select-small"
         value={selectedResources}
-        label='Resources'
+        label="Resources"
         onChange={handleChange}
       >
         {resources?.map((u: string) => {
